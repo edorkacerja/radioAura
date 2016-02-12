@@ -1,0 +1,261 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body *{
+    font-family: "Century Gothic", Georgia, sans-serif;
+    transition: all 0.5s ease;
+}
+
+body {
+
+}
+
+
+
+/* -------------- MAIN CLASS ----------------*/
+.mainClass{
+    background-image: url("images/background/bg3.jpg");
+    background-repeat: no-repeat;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height:600px;
+}
+
+
+
+
+
+/* ------------------- HEADER ----------------------*/
+.mainClass .header{
+    background-color: rgba(0,0,0,0.4);
+    height:100%;
+    padding-top: 30px;
+}
+
+
+.mainClass .header .menu{
+    margin-top: 10px;
+}
+
+.mainClass .header ul{
+    display: inline;
+    float: right;
+    padding:20px 40px;
+}
+
+.mainClass .header ul li {
+
+    display: inline;
+}
+
+.mainClass .header ul li a{
+    font-family: "Century Gothic", Georgia, sans-serif;
+    color: white;
+    font-size: 18px;
+    padding:10px 30px;
+}
+
+.mainClass .header ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+}
+
+.header button{
+    position: relative;
+    z-index:3;
+}
+
+.header img{
+    width:200px;
+}
+.logoSmaller img{
+    width:100px;
+}
+
+
+
+.menu2{
+    color:white;
+    padding:20px 100px;
+}
+
+.headFixed{
+    height:100px;
+}
+.scrolled{
+    background-color: rgba(0,0,0,.8);
+    padding: 0 100px;
+}
+
+/*-------------- JUMBOTRON ---------------*/
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+    margin:230px auto;
+    color: white;
+}
+
+.listenLive{
+    margin-top: 20px;
+    padding: 40px 100px;
+    background-color: #65329B;
+    border: none;
+}
+
+.links {
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.links img{
+    width: 130px;
+}
+
+#insta{
+    width: 80px;
+}
+
+
+
+
+.slogan{
+    height:400px; /*Temporarily!!!!!!!!!!!!*/
+    background-color: black;
+}
+
+
+/*-----------------HomeSlider-----------------*/
+.homeSlider{
+    height: 500px;
+    position: relative;
+}
+.homeSlider img{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+
+.homeSlider img.active-slide{
+    display: block;
+}
+
+.homeSlider .quote{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    font-size: 1.3em;
+    padding: 20px;
+}
+.homeSlider .quote span{
+    padding: 10px;
+}
+
+/*----------------SPONSORS-------------------*/
+.sponsors{
+    background-color: white;
+    margin-top: 150px;
+}
+
+.sponsors img{
+    width: 260px;
+    padding: 30px;
+}
+
+
+
+/*------------------GENRES--------------------*/
+.genres{
+    background-image: url('../images/music/genres.jpg');
+     background-repeat: no-repeat;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height:600px;
+    
+}
+
+
+
+/*-------------------TEAM---------------------*/
+
+.team{
+    position:relative;
+    height:1000px;
+    display: none; /*temporarily!!!!!!!!!!!!!!!!!!!!*/
+}
+.team .row{
+    overflow: hidden;
+}
+.team .row [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.team .row h4{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.team .row .grey{
+    background-color: #DDDDDD;
+}
+.team .row .white{
+    background-color: #EEEEEE;
+}
+.team .row img{
+    margin:0;
+    padding:0;
+}
+
+/*-----------------ACOUSTICS-----------------*/
+.acoustics{
+    background-image: url("images/background/sessions.JPG");
+    background-repeat:no-repeat;;
+    background-color: #444444;
+}
+.acoustics p{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/*-----------------MEDIA----------------------*/
+
+@media screen and (max-width: 580px) {
+
+    .mainClass{
+
+    }
+    .sponsors img{
+        width: 160px;
+    }
+    .genres {
+        background-image: url(../images/music/genresSmall.jpg);
+    }
+
+    .menu2{
+        padding:0;
+    }
+
+    .header img{
+        width:100px;
+    }
+}
+@media screen and (min-height: 700px) {
+
+    .mainClass{
+        height:900px;
+    }
+
+
+}
+
